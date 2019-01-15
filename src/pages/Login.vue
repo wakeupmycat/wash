@@ -125,6 +125,8 @@ export default {
         padding 0 .36rem
         input 
           font-size 14px
+          border none
+          outline none
         .rec-btn
           font-size:11px  
           color #1EB14A
