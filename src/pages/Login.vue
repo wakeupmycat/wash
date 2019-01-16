@@ -48,9 +48,12 @@
       <span>提示：车秘用户可使用账号密码登录</span>
       <div class="change_type" @click="login_type=!login_type">{{login_type?"密码登录":"验证码登录"}}</div>
     </div>
+  <Loading />
+
   </div>
 </template>
 <script>
+import Loading from '@/components/Loading'
 export default {
   data() {
     return {
@@ -61,6 +64,7 @@ export default {
       showtoast:true
     };
   },
+  components:{Loading},
   methods: {
     getCode() {
       const TIME_COUNT = 60;
